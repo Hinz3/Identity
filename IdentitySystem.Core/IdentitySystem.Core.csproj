@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj" />
+    <ProjectReference Include="..\IdentitySystem.Contracts\IdentitySystem.Contracts.csproj" />
+    <ProjectReference Include="..\IdentitySystem.DataContext\IdentitySystem.DataContext.csproj" />
+    <ProjectReference Include="..\IdentitySystem.Events\IdentitySystem.Events.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Policies\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Collection" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="EFCore.BulkExtensions" Version="7.0.1" />
+    <PackageReference Include="Hinz3.EasyNetQ" Version="1.0.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.4" />
+  </ItemGroup>
+
+</Project>
